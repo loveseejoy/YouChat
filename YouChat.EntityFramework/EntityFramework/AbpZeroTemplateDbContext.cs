@@ -5,6 +5,7 @@ using YouChat.Authorization.Roles;
 using YouChat.Authorization.Users;
 using YouChat.MultiTenancy;
 using YouChat.Storage;
+using YouChat.YouChat;
 
 namespace YouChat.EntityFramework
 {
@@ -13,6 +14,9 @@ namespace YouChat.EntityFramework
         /* Define an IDbSet for each entity of the application */
 
         public virtual IDbSet<BinaryObject> BinaryObjects { get; set; }
+
+        public virtual IDbSet<Article> Article { set; get; }
+        public virtual IDbSet<Category> Category { set; get;}
 
         /* Setting "Default" to base class helps us when working migration commands on Package Manager Console.
          * But it may cause problems when working Migrate.exe of EF. ABP works either way.         * 

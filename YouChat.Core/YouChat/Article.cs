@@ -18,9 +18,9 @@ namespace YouChat.YouChat
     
         public string Content { set; get; }
 
-        public int  CategoryID { set; get; }
+        public int  CategoryId { set; get; }
 
-        [ForeignKey("CategoryID")]
+        [ForeignKey("CategoryId")]
         public  Category Category { set; get; }
 
     }
