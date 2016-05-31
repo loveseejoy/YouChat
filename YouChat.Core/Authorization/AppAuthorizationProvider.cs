@@ -65,6 +65,14 @@ namespace YouChat.Authorization
 
             administration.CreateChildPermission(AppPermissions.Pages_Administration_Host_Settings, L("Settings"), multiTenancySides: MultiTenancySides.Host);
             administration.CreateChildPermission(AppPermissions.Pages_Administration_Host_Maintenance, L("Maintenance"), multiTenancySides: MultiTenancySides.Host);
+
+            //YouChat PERMISSIONS
+            var youchat = pages.CreateChildPermission(AppPermissions.Pages_YouChat,L("YouChat"));
+
+            var youchatArticle = youchat.CreateChildPermission(AppPermissions.Pages_YouChat_Articl,L("Articl"));
+            youchatArticle.CreateChildPermission(AppPermissions.Pages_YouChat_Articl_Create, L("ArticleAdd"));
+            youchatArticle.CreateChildPermission(AppPermissions.PPages_YouChat_Articl_Edit, L("ArticleEdit"));
+            youchatArticle.CreateChildPermission(AppPermissions.Pages_YouChat_Articl_Delete, L("ArticleDelete"));
         }
 
         private static ILocalizableString L(string name)

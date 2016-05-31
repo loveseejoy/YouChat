@@ -109,9 +109,9 @@
   <ItemGroup>
     <Compile Include="EntityFramework\AbpZeroTemplateDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\AbpZeroTemplateRepositoryBase.cs" />
-    <Compile Include="Migrations\201605310618373_InitData.cs" />
-    <Compile Include="Migrations\201605310618373_InitData.Designer.cs">
-      <DependentUpon>201605310618373_InitData.cs</DependentUpon>
+    <Compile Include="Migrations\201605311335261_initdata.cs" />
+    <Compile Include="Migrations\201605311335261_initdata.Designer.cs">
+      <DependentUpon>201605311335261_initdata.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="AbpZeroTemplateDataModule.cs" />
@@ -133,8 +133,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605310618373_InitData.resx">
-      <DependentUpon>201605310618373_InitData.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605311335261_initdata.resx">
+      <DependentUpon>201605311335261_initdata.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

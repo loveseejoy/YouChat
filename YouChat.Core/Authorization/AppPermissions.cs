@@ -59,5 +59,14 @@
         public const string Pages_Administration_Host_Maintenance = "Pages.Administration.Host.Maintenance";
 
         public const string Pages_Administration_Host_Settings = "Pages.Administration.Host.Settings";
+
+
+
+        //YouChat PERMISSIONS
+        public const string Pages_YouChat = "Pages.YouChat";
+        public const string Pages_YouChat_Articl = "Pages.YouChat.Article";
+        public const string Pages_YouChat_Articl_Create = "Pages.YouChat.Article.Create";
+        public const string PPages_YouChat_Articl_Edit = "Pages.YouChat.Article.Edit";
+        public const string Pages_YouChat_Articl_Delete = "Pages.YouChat.Article.Delete";
     }
 }

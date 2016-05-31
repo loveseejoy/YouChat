@@ -406,6 +406,7 @@
       <DependentUpon>index.css</DependentUpon>
     </Content>
     <Content Include="App\host\views\tenants\featuresModal.js" />
+    <Content Include="App\youchat\views\index.js" />
     <Content Include="Areas\Mpa\Common\Scripts\jquery-validation-custom.js" />
     <Content Include="Areas\Mpa\Views\AuditLogs\index.css">
       <DependentUpon>index.less</DependentUpon>
@@ -1977,6 +1978,7 @@
     <Content Include="App\common\views\users\loginAttemptsModal.less" />
     <Content Include="Areas\Mpa\Views\Users\_LoginAttemptsModal.cshtml" />
     <Content Include="Areas\Mpa\Views\Users\_LoginAttemptsModal.less" />
+    <Content Include="App\youchat\views\index.cshtml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />

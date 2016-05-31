@@ -7,13 +7,13 @@ namespace YouChat.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitData : IMigrationMetadata
+    public sealed partial class initdata : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitData));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initdata));
         
         string IMigrationMetadata.Id
         {
-            get { return "201605310618373_InitData"; }
+            get { return "201605311335261_initdata"; }
         }
         
         string IMigrationMetadata.Source

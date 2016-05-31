@@ -48,10 +48,10 @@ namespace YouChat.Web
             Configuration.Navigation.Providers.Add<MpaNavigationProvider>();
 
             //Uncomment these lines to use HangFire as background job manager.
-            //Configuration.BackgroundJobs.UseHangfire(configuration =>
-            //{
-            //    configuration.GlobalConfiguration.UseSqlServerStorage("Default");
-            //});
+            Configuration.BackgroundJobs.UseHangfire(configuration =>
+            {
+                configuration.GlobalConfiguration.UseSqlServerStorage("Default");
+            });
 
             //Uncomment this line to use Redis cache instead of in-memory cache.
             //Configuration.Caching.UseRedis();

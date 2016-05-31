@@ -38,6 +38,17 @@ namespace YouChat.Web.App.Startup
                     requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
                     )
                 ).AddItem(new MenuItemDefinition(
+                    PageNames.App.YouChating.YouChat,
+                    L("YouChat"),
+                    requiredPermissionName: AppPermissions.Pages_YouChat
+                    ).AddItem(new MenuItemDefinition(
+                        PageNames.App.YouChating.YouChat_Article,
+                        L("YouChatArticle"),
+                        url:"",
+                        requiredPermissionName: AppPermissions.Pages_YouChat_Articl
+                        )
+                    )
+                ).AddItem(new MenuItemDefinition(
                     PageNames.App.Common.Administration,
                     L("Administration"),
                     icon: "icon-wrench"

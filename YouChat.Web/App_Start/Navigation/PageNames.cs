@@ -27,6 +27,12 @@ namespace YouChat.Web.Navigation
                 public const string Dashboard = "Dashboard.Tenant";
                 public const string Settings = "Administration.Settings.Tenant";
             }
+
+            public static class YouChating
+            {
+                public const string YouChat= "YouChat";
+                public const string YouChat_Article = "YouChat.Article";
+            }
         }
 
         public static class Frontend
