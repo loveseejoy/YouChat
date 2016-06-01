@@ -16,5 +16,7 @@ namespace YouChat.YouChat.Dto
         public string Content { set; get; }
 
         public string CategoryName { set; get; }
+
+        public DateTime CreationTime { set; get; }
     }
 }

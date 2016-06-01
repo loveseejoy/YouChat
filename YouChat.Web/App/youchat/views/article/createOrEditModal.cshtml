@@ -1,0 +1,25 @@
+﻿@using YouChat.Authorization.Roles
+<div>
+    <form name="articleCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.article.id">修改</span>
+                <span ng-if="!vm.article.id">添加</span>
+            </h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <input class="form-control" type="text" name="Title"  ng-class="{'edited':vm.article.title}" ng-model="vm.article.title">
+                <label>标题</label>
+            </div>
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <textarea class="form-control"  ng-model="vm.article.content"></textarea>
+                <label>内容</label>
+            </div>
+            </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+            <button type="submit" button-busy="vm.saving" busy-text="@L("SavingWithThreeDot")" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="roleCreateOrEditForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+        </div>
+    </form>
+</div>

@@ -12,6 +12,7 @@ namespace YouChat.YouChat.Dto
     [AutoMapTo(typeof(Article))]
     public class CreateOrUpdateArticleInput: IInputDto
     {
+        public int? Id { set; get; }
         [Required]
         public string Title { set; get; }
 

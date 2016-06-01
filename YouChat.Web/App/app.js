@@ -187,6 +187,18 @@ appModule.config([
                 menu: 'Administration.Settings.Tenant'
             });
         }
+
+
+        // YouChat routes
+
+        if (abp.auth.hasPermission('Pages.YouChat.Article')) {
+           // $urlRouterProvider.otherwise("/youchat/article"); //Entrance page for a tenant
+            $stateProvider.state('youchat_article', {
+                url: '/article',
+                templateUrl: '~/App/youchat/views/article/index.cshtml',
+                menu: 'YouChat.Article'
+            });
+        }
     }
 ]);
 

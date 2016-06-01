@@ -26,21 +26,29 @@ namespace YouChat.YouChat
         public async Task CreateOrUpdateArticle(CreateOrUpdateArticleInput input)
         {
             var article = input.MapTo<Article>();
+            article.CategoryId = 1;
             await _articleRepository.InsertAsync(article);
         }
 
         public async Task<PagedResultOutput<ArticleListDto>> GetArticle(GetArticleInput input)
         {
-            var query = _articleRepository.GetAll();
+            var query = _articleRepository.GetAll().Include(x=>x.Category)
+                       .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter));
 
             var count = await query.CountAsync();
+
 
             var articles = await query
                            .OrderBy(input.Sorting)
                            .PageBy(input)
                            .ToListAsync();
 
-            var articleListOutput = articles.MapTo<List<ArticleListDto>>();
+           var articleListOutput = articles.Select(x =>
+            {
+                var dto = x.MapTo<ArticleListDto>();
+                dto.CategoryName = x.Category.Name;
+                return dto;
+            }).ToList();
 
             return new PagedResultOutput<ArticleListDto>(count, articleListOutput);
         }

@@ -44,7 +44,7 @@ namespace YouChat.Web.App.Startup
                     ).AddItem(new MenuItemDefinition(
                         PageNames.App.YouChating.YouChat_Article,
                         L("YouChatArticle"),
-                        url:"",
+                        url:"youchat_article",
                         requiredPermissionName: AppPermissions.Pages_YouChat_Articl
                         )
                     )

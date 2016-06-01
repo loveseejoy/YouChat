@@ -10,6 +10,7 @@ namespace YouChat.YouChat.Dto
 {
     public class GetArticleInput: PagedAndSortedInputDto, IShouldNormalize
     {
+        public string Filter { get; set; }
 
         public void Normalize()
         {
