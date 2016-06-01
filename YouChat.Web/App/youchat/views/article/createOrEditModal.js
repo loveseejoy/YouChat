@@ -1,9 +1,11 @@
 ﻿(function() {
     appModule.controller('youchat.views.article.createOrEditModal', [
-        '$scope', '$uibModalInstance', 'abp.services.app.article', 'articleId',
-        function ($scope, $uibModalInstance, atricleSerivce,articleId) {
+        '$scope', '$uibModalInstance',  'meta.umeditor','abp.services.app.article', 'articleId',
+        function ($scope, $uibModalInstance,umeditor, atricleSerivce,articleId) {
 
             var vm = this;
+
+
             vm.saving = false;
 
             vm.article = null;
@@ -12,10 +14,11 @@
                 $uibModalInstance.dismiss();
             };
 
-            vm.save = function() {
+            vm.save = function () {
                 vm.saving = true;
                 atricleSerivce.createOrUpdateArticle({
-                    article:vm.article
+                    title: vm.article.title,
+                    content:vm.article.content
                 }).success(function () {
                     abp.notify.info(app.localize('SavedSuccessfully'));
                     $uibModalInstance.close();
@@ -26,3 +29,5 @@
         }
     ]);
 })();
+
+
