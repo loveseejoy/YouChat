@@ -10,7 +10,7 @@ using Abp.AutoMapper;
 namespace YouChat.YouChat.Dto
 {
     [AutoMapTo(typeof(Article))]
-    public class CreateOrUpdateArticleInput: IInputDto
+    public class CreateOrUpdateArticleDto: IInputDto
     {
         public int? Id { set; get; }
         [Required]

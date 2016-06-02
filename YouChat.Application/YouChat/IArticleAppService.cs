@@ -11,8 +11,10 @@ namespace YouChat.YouChat
 {
     public interface IArticleAppService: IApplicationService
     {
-        Task CreateOrUpdateArticle(CreateOrUpdateArticleInput input);
+        Task CreateOrUpdateArticle(CreateOrUpdateArticleDto input);
 
-        Task<PagedResultOutput<ArticleListDto>> GetArticle(GetArticleInput input);
+        Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input);
+
+        Task<CreateOrUpdateArticleDto> GetArticle(NullableIdInput input);
     }
 }

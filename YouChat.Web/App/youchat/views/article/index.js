@@ -103,7 +103,7 @@
 
             vm.getArticle = function () {
                 vm.loading = true;
-                articleService.getArticle({
+                articleService.getArticleList({
                     skipCount: requestParams.skipCount,
                     maxResultCount: requestParams.maxResultCount,
                     sorting: requestParams.sorting,

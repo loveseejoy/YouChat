@@ -23,14 +23,23 @@ namespace YouChat.YouChat
             _articleRepository = articleRepository;
         }
 
-        public async Task CreateOrUpdateArticle(CreateOrUpdateArticleInput input)
+        public async Task CreateOrUpdateArticle(CreateOrUpdateArticleDto input)
         {
-            var article = input.MapTo<Article>();
-            article.CategoryId = 1;
-            await _articleRepository.InsertAsync(article);
+            if (input.Id.HasValue)
+            {
+                var article = input.MapTo<Article>();
+                article.CategoryId = 1;
+                await _articleRepository.InsertAsync(article);
+            }
+            else
+            {
+                var article = input.MapTo<Article>();
+                article.CategoryId = 1;
+                await _articleRepository.UpdateAsync(article);
+            }
         }
 
-        public async Task<PagedResultOutput<ArticleListDto>> GetArticle(GetArticleInput input)
+        public async Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input)
         {
             var query = _articleRepository.GetAll().Include(x=>x.Category)
                        .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter));
@@ -51,6 +60,21 @@ namespace YouChat.YouChat
             }).ToList();
 
             return new PagedResultOutput<ArticleListDto>(count, articleListOutput);
+        }
+
+        public async Task<CreateOrUpdateArticleDto> GetArticle(NullableIdInput input)
+        {
+            if (input.Id.HasValue)
+            {
+                var article = await _articleRepository.FirstOrDefaultAsync(x => x.Id == input.Id);
+                var articleOutput = article.MapTo<CreateOrUpdateArticleDto>();
+                return articleOutput;
+            }
+            else
+            {
+                return new CreateOrUpdateArticleDto();
+            }
+          
         }
     }
 }
