@@ -7,7 +7,11 @@
 
             vm.saving = false;
 
-            vm.article = null;
+            vm.article = {
+                title: "",
+                content: "",
+                Id:articleId
+             };
 
             vm.cancel = function () {
                 $uibModalInstance.dismiss();
@@ -17,7 +21,8 @@
                 vm.saving = true;
                 atricleSerivce.createOrUpdateArticle({
                     title: vm.article.title,
-                    content:vm.article.content
+                    content: vm.article.content,
+                    id:vm.article.Id
                 }).success(function () {
                     abp.notify.info(app.localize('SavedSuccessfully'));
                     $uibModalInstance.close();

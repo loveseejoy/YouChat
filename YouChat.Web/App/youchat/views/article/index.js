@@ -62,6 +62,12 @@
                         enableSorting: false
                     },
                     {
+                        name: "作者",
+                        field: 'userName',
+                        minWidth: 200,
+                        enableSorting: false
+                    },
+                    {
                          name: "创建时间",
                          field: 'creationTime',
                          minWidth: 100

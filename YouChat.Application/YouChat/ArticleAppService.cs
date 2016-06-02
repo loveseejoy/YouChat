@@ -27,21 +27,22 @@ namespace YouChat.YouChat
         {
             if (input.Id.HasValue)
             {
-                var article = input.MapTo<Article>();
+                var article = _articleRepository.Get(input.Id.Value);
+                article = input.MapTo(article);
                 article.CategoryId = 1;
-                await _articleRepository.InsertAsync(article);
+                await _articleRepository.UpdateAsync(article);
             }
             else
             {
                 var article = input.MapTo<Article>();
                 article.CategoryId = 1;
-                await _articleRepository.UpdateAsync(article);
+                await _articleRepository.InsertAsync(article);
             }
         }
 
         public async Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input)
         {
-            var query = _articleRepository.GetAll().Include(x=>x.Category)
+            var query = _articleRepository.GetAll().Include(x=>x.Category).Include(x=>x.CreatorUser)
                        .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter));
 
             var count = await query.CountAsync();
@@ -56,6 +57,7 @@ namespace YouChat.YouChat
             {
                 var dto = x.MapTo<ArticleListDto>();
                 dto.CategoryName = x.Category.Name;
+                dto.UserName = x.CreatorUser.UserName;
                 return dto;
             }).ToList();
 

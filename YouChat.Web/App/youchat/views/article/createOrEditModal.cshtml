@@ -16,11 +16,11 @@
         </div>
         <div class="modal-body">
             <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                <input class="form-control" type="text" name="Title"  ng-class="{'edited':vm.article.title}" ng-model="vm.article.title">
+                <input class="form-control" type="text" name="Title"   ng-class="{'edited':vm.article.title}" ng-model="vm.article.title">
                 <label>标题</label>
             </div>
             <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                <textarea class="form-control"  ng-model="vm.article.content"></textarea>
+                <textarea class="form-control"  ng-class="{'edited':vm.article.content}" ng-model="vm.article.content"></textarea>
                 <label>内容</label>
             </div>
          </div>
