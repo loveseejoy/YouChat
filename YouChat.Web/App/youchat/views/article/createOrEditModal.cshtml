@@ -1,4 +1,11 @@
 ﻿@using YouChat.Authorization.Roles
+
+<link href="~/Content/umeditor1/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script src="~/Content/umeditor1/third-party/jquery.min.js"></script>
+<script src="~/Content/umeditor1/umeditor.min.js"></script>
+<script src="~/Content/umeditor1/umeditor.config.js"></script>
+
+
 <div>
     <form name="articleCreateOrEditForm" role="form" novalidate class="form-validation">
         <div class="modal-header">
@@ -12,11 +19,19 @@
                 <input class="form-control" type="text" name="Title"  ng-class="{'edited':vm.article.title}" ng-model="vm.article.title">
                 <label>标题</label>
             </div>
-            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+            @*<div class="form-group form-md-line-input form-md-floating-label no-hint">
                 <textarea class="form-control"  ng-model="vm.article.content"></textarea>
                 <label>内容</label>
+            </div>*@
+            <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                <!--style给定宽度可以影响编辑器的最终宽度-->
+                <script type="text/html" style="margin:auto;height:300px;width:100%;" ng-model="vm.article.content" meta-umeditor
+                        meta-umeditor-config='all_config'
+                        meta-umeditor-placeholder="提示文案!这里是完整的示例">
+                </script>
             </div>
-            </div>
+            {{vm.article.content}}
+         </div>
         <div class="modal-footer">
             <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
             <button type="submit" button-busy="vm.saving" busy-text="@L("SavingWithThreeDot")" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="roleCreateOrEditForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
