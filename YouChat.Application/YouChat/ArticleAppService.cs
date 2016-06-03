@@ -76,7 +76,11 @@ namespace YouChat.YouChat
             {
                 return new CreateOrUpdateArticleDto();
             }
-          
+        }
+
+        public async Task DeleteArticle(EntityRequestInput input)
+        {
+           await _articleRepository.DeleteAsync(input.Id);
         }
     }
 }

@@ -148,6 +148,16 @@
                 openCreateOrEditArticleModal(null);
             };
 
+            vm.deleteArticle = function(article) {
+                articleService.deleteArticle({
+                    id: article.id
+                }).success(function () {
+                    vm.getArticle();
+                    abp.notify.success(app.localize('SuccessfullyDeleted'));
+                });
+            };
+            
+
             //vm.deleteUser = function (user) {
             //    if (user.userName == app.consts.userManagement.defaultAdminUserName) {
             //        abp.message.warn(app.localize("{0}UserCannotBeDeleted", app.consts.userManagement.defaultAdminUserName));

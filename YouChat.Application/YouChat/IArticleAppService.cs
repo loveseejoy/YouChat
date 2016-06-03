@@ -16,5 +16,7 @@ namespace YouChat.YouChat
         Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input);
 
         Task<CreateOrUpdateArticleDto> GetArticle(NullableIdInput input);
+
+        Task DeleteArticle(EntityRequestInput input);
     }
 }
