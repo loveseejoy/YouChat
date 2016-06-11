@@ -1,0 +1,41 @@
+﻿@model YouChat.YouChat.Dto.ArticleListDto
+@{
+    ViewBag.Title = "Article";
+}
+
+<article class="post tag-laravel-5 tag-getting-started-with-laravel tag-laravel-5-2">
+
+    <header class="post-head">
+        <h1 class="post-title">@Model.Title</h1>
+        <section class="post-meta">
+            <span class="author">作者：<a href="#">@Model.UserName</a></span> •
+            <time class="post-date" datetime="#" title="#">@Model.CreationTime.ToString("yyyy-MM-dd HH:mm:ss")</time>
+        </section>
+    </header>
+    <!--如果有图片-->
+    @*<section class="featured-media">
+        <img src="http://image.golaravel.com/d/51/11130f096dbec743756b69cbb22f9.jpg" alt="2016 版 Laravel 系列入门教程（一）">
+    </section>*@
+
+    <section class="post-content">
+      @Model.Content
+    </section>
+
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <i class="fa fa-folder-open-o"></i>
+            <a href="#">@Model.CategoryName</a>
+        </div>
+        @*<div class="pull-right share">
+            <div class="bdsharebuttonbox share-icons">
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+        </div>*@
+    </footer>
+</article>
+

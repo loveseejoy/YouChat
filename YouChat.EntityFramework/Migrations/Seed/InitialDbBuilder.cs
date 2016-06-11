@@ -21,6 +21,8 @@ namespace YouChat.Migrations.Seed
             new DefaultTenantRoleAndUserCreator(_context).Create();
             new DefaultSettingsCreator(_context).Create();
 
+            _context.Category.Add(new YouChat.Category() { Name="热点文章"});
+
             _context.SaveChanges();
         }
     }

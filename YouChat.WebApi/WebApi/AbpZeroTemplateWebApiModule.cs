@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Reflection;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Abp.Application.Services;
 using Abp.Configuration.Startup;
 using Abp.Modules;
@@ -35,6 +36,8 @@ namespace YouChat.WebApi
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
 
             ConfigureSwaggerUi(); //Remove this line to disable swagger UI.
+
+            GlobalConfiguration.Configuration.EnableCors(new EnableCorsAttribute("*", "*", "*"));
         }
 
         private void ConfigureOData()

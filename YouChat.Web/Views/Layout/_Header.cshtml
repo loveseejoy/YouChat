@@ -31,7 +31,7 @@
         }
     </li>
 }
-<div class="pre-header">
+@*<div class="pre-header">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 additional-shop-info">
@@ -99,4 +99,36 @@
             </ul>
         </div>
     </div>
-</div>
+</div>*@
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header">
+                    <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        @foreach (var menu in Model.Menu.Items)
+                        {
+                            <li class="@(menu.Name == Model.CurrentPageName ? "nav-current" : "")" role="presentation"><a href="@(ApplicationPath + menu.Url)">@menu.DisplayName</a></li>
+                        }
+                        <li role="presentation">
+                            @if (Model.LoginInformations != null)
+                            {
+                                <a href="@Url.Action("Index", "Application")">@Model.GetShownLoginName() </a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("Login", "Account")">@L("LogIn")</a>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

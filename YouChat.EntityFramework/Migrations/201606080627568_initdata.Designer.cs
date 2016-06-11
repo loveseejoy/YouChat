@@ -13,7 +13,7 @@ namespace YouChat.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201605311335261_initdata"; }
+            get { return "201606080627568_initdata"; }
         }
         
         string IMigrationMetadata.Source

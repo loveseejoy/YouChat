@@ -40,11 +40,13 @@ namespace YouChat.YouChat
             }
         }
 
+
         public async Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input)
         {
             var query = _articleRepository.GetAll().Include(x=>x.Category).Include(x=>x.CreatorUser)
-                       .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter));
-
+                       .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter))
+                       .WhereIf(AbpSession.UserId!=2,x=>x.CreatorUser.Id==AbpSession.UserId); //这里要改
+           
             var count = await query.CountAsync();
 
 
@@ -81,6 +83,27 @@ namespace YouChat.YouChat
         public async Task DeleteArticle(EntityRequestInput input)
         {
            await _articleRepository.DeleteAsync(input.Id);
+        }
+
+        public  List<ArticleListDto> GetArticlAll()
+        {
+            var article =  _articleRepository.GetAll().Include(x => x.Category).Include(x => x.CreatorUser).ToList();
+            return article.Select(x =>
+            {
+                var dto = x.MapTo<ArticleListDto>();
+                dto.CategoryName = x.Category.Name;
+                dto.UserName = x.CreatorUser.Name;
+                return dto;
+            }).ToList();
+        }
+
+        public ArticleListDto GetArticleById(int Id)
+        {
+            var article = _articleRepository.GetAll().Include(x => x.Category).FirstOrDefault(x=>x.Id==Id);
+            var articleDto = article.MapTo<ArticleListDto>();
+            articleDto.UserName = article.CreatorUser.UserName;
+            articleDto.CategoryName = article.Category.Name;
+            return articleDto;
         }
     }
 }

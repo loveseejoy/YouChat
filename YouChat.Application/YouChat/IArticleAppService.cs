@@ -18,5 +18,9 @@ namespace YouChat.YouChat
         Task<CreateOrUpdateArticleDto> GetArticle(NullableIdInput input);
 
         Task DeleteArticle(EntityRequestInput input);
+
+        List<ArticleListDto>  GetArticlAll();
+
+        ArticleListDto GetArticleById(int Id);
     }
 }

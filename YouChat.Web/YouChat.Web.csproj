@@ -237,6 +237,10 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -251,6 +255,10 @@
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -599,6 +607,8 @@
     <Content Include="Common\Styles\core.min.css">
       <DependentUpon>core.css</DependentUpon>
     </Content>
+    <Content Include="Content\youchat\Logo.png" />
+    <Content Include="Content\youchat\screen.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts-open-sans.css" />
@@ -1288,7 +1298,6 @@
     <Content Include="libs\jquery-uniform\jquery.uniform.min.js" />
     <Content Include="Content\flags\famfamfam-flags.css" />
     <Content Include="Content\flags\famfamfam-flags.png" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="libs\simple-line-icons\fonts\Simple-Line-Icons.dev.svg" />
     <Content Include="libs\simple-line-icons\fonts\Simple-Line-Icons.svg" />
@@ -1981,6 +1990,7 @@
     <Content Include="Areas\Mpa\Views\Users\_LoginAttemptsModal.less" />
     <Content Include="App\youchat\views\article\index.cshtml" />
     <Content Include="App\youchat\views\article\createOrEditModal.cshtml" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
@@ -3033,6 +3043,7 @@
     <Content Include="Views\TenantRegistration\Index.cshtml" />
     <Content Include="Views\TenantRegistration\RegisterResult.cshtml" />
     <Content Include="Scripts\underscore.min.map" />
+    <Content Include="Views\Home\Article.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -25,13 +25,13 @@ namespace YouChat.Web.Navigation
                     L("HomePage"),
                     url: ""
                     )
-
-                //ABOUT
-                ).AddItem(new MenuItemDefinition(
-                    PageNames.Frontend.About,
-                    L("AboutUs"),
-                    url: "About"
-                    )
+                //Login
+                //)
+                //.AddItem(new MenuItemDefinition(
+                //    PageNames.Frontend.About,
+                //    L("LogIn"),
+                //    url: "Account/Login"
+                //    )
 
                 //MULTI-LEVEL MENU (JUST FOR EXAMPLE)
                 //).AddItem(new MenuItemDefinition(

@@ -36,10 +36,13 @@ namespace YouChat.Authorization.Users
             return new User
                    {
                        TenantId = tenantId,
-                       UserName = AdminUserName,
-                       Name = AdminUserName,
-                       Surname = AdminUserName,
-                       EmailAddress = emailAddress,
+                        //UserName = AdminUserName,
+                        //Name = AdminUserName,
+                        //Surname = AdminUserName,
+                        UserName = "seejoy",
+                        Name = "seejoy",
+                        Surname = "seejoy",
+                        EmailAddress = emailAddress,
                        Password = new PasswordHasher().HashPassword(password)
                    };
         }

@@ -39,11 +39,11 @@ namespace YouChat.Web.App.Startup
                     )
                 ).AddItem(new MenuItemDefinition(
                     PageNames.App.YouChating.YouChat,
-                    L("YouChat"),
+                    L("理聊"),
                     requiredPermissionName: AppPermissions.Pages_YouChat
                     ).AddItem(new MenuItemDefinition(
                         PageNames.App.YouChating.YouChat_Article,
-                        L("YouChatArticle"),
+                        L("文章"),
                         url:"youchat_article",
                         requiredPermissionName: AppPermissions.Pages_YouChat_Articl
                         )

@@ -59,8 +59,9 @@ appModule.config([
     function ($stateProvider, $urlRouterProvider) {
 
         // Default route (overrided below if user has permission)
-        $urlRouterProvider.otherwise("/welcome");
+        //$urlRouterProvider.otherwise("/welcome");
 
+        $urlRouterProvider.otherwise("/article");
         //Welcome page
         $stateProvider.state('welcome', {
             url: '/welcome',
