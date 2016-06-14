@@ -773,7 +773,6 @@
     <Content Include="Content\youchat\kindeditor\net\Bin\Newtonsoft.Json.pdb" />
     <Content Include="Content\youchat\kindeditor\net\Bin\Newtonsoft.Json.xml" />
     <Content Include="Content\youchat\kindeditor\net\net.sln" />
-    <Content Include="Content\youchat\kindeditor\net\upload\image\20160614\6360150333803760364181981.jpg" />
     <Content Include="Content\youchat\kindeditor\themes\default\css\ueditor.css" />
     <Content Include="Content\youchat\kindeditor\themes\default\css\ueditor.min.css" />
     <Content Include="Content\youchat\kindeditor\themes\default\dialogbase.css" />
@@ -3358,7 +3357,9 @@
       <Name>YouChat.WebApi</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\youchat\kindeditor\net\upload\image\20160614\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
