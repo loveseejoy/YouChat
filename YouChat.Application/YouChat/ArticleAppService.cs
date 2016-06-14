@@ -87,7 +87,7 @@ namespace YouChat.YouChat
 
         public  List<ArticleListDto> GetArticlAll()
         {
-            var article =  _articleRepository.GetAll().Include(x => x.Category).Include(x => x.CreatorUser).ToList();
+            var article =  _articleRepository.GetAll().Include(x => x.Category).Include(x => x.CreatorUser).OrderByDescending(x=>x.CreationTime).ToList();
             return article.Select(x =>
             {
                 var dto = x.MapTo<ArticleListDto>();

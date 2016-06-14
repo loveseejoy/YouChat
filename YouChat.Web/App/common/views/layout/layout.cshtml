@@ -30,6 +30,7 @@
     @Styles.Render("~/Bundles/Common/css")
     @Styles.Render("~/Bundles/App/css")
 
+
     <script type="text/javascript">
         @* This is used to get the application's root path from javascript.
         It's useful if you're running application in a virtual directory under IIS. *@
@@ -100,6 +101,13 @@
 
     @Scripts.Render("~/Bundles/App/metronic/js")
     @Scripts.Render("~/Bundles/Common/js")
+
+<script src="~/Content/youchat/kindeditor/ueditor.config.js"></script>
+<script src="~/Content/youchat/kindeditor/ueditor.all.min.js"></script>
+<script src="~/Content/youchat/kindeditor/lang/zh-cn/zh-cn.js"></script>
+    @*<script src="~/Content/youchat/kindeditor/baiduueditor.js"></script>*@
+   
     @Scripts.Render("~/Bundles/App/js")
+   
 </body>
 </html>

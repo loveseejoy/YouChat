@@ -225,4 +225,3 @@ appModule.run(["$rootScope", "settings", "$state", 'i18nService', function ($roo
         }
     };
 }]);
-

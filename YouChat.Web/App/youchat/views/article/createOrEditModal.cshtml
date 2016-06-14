@@ -1,5 +1,11 @@
 ﻿@using YouChat.Authorization.Roles
 
+
+
+
+<link href="~/Content/youchat/kindeditor/themes/default/css/ueditor.css" rel="stylesheet"/>
+<script src="~/Content/youchat/kindeditor/third-party/codemirror/codemirror.js"></script>
+<link href="~/Content/youchat/kindeditor/third-party/codemirror/codemirror.css" rel="stylesheet" />
 <div>
     <form name="articleCreateOrEditForm" role="form" novalidate class="form-validation">
         <div class="modal-header">
@@ -14,8 +20,11 @@
                 <label>标题</label>
             </div>
             <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                <textarea class="form-control"  ng-class="{'edited':vm.article.content}" ng-model="vm.article.content"></textarea>
-                <label>内容</label>
+                @*<textarea class="form-control"  ng-class="{'edited':vm.article.content}" ng-model="vm.article.content"></textarea>
+                <label>内容</label>*@
+                <ueditor  ng-model="vm.article.content">
+
+                </ueditor>
             </div>
          </div>
         <div class="modal-footer">

@@ -23,7 +23,7 @@
              <a href="#"><img src="xxx.jpg" alt="如果有图片可以放在这里"></a>
         </div>*@
         <div class="post-content">
-            <p>@item.Content</p>
+            <p> @Html.Raw(item.Content)</p>
         </div>
         <div class="post-permalink">
             <a href="@Url.Action("Article","Home",new

@@ -33,5 +33,17 @@ namespace YouChat.Web.Controllers
             System.IO.File.Delete(filePath);
             return File(fileBytes, file.FileType, file.FileName);
         }
+
+        public void GetFileFromUeditor()
+        {
+            if (Request["action"] == "")
+            {
+
+            }
+            else if (Request["action"] == "uploadimage")
+            {
+                
+            }
+        }
     }
 }
