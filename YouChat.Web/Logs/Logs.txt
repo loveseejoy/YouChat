@@ -20252,3 +20252,348 @@ WARN  2016-06-14 13:17:50,049 [79   ] Abp.Logging.LogHelper                    -
 WARN  2016-06-14 13:17:50,056 [79   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
 WARN  2016-06-14 13:17:50,069 [79   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
 DEBUG 2016-06-14 13:18:16,463 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0b80999e-6946-4712-be87-a57b0a261a47
+DEBUG 2016-06-14 14:37:58,760 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-14 14:37:59,734 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-14 14:37:59,737 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Runtime.Caching.Redis.AbpRedisCacheModule, Abp.RedisCache, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.OData.AbpWebApiODataModule, Abp.Web.Api.OData, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.Ldap.AbpZeroLdapModule, Abp.Zero.Ldap, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateApplicationModule, YouChat.Application, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateCoreModule, YouChat.Core, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateDataModule, YouChat.EntityFramework, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.Web.AbpZeroTemplateWebModule, YouChat.Web, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.WebApi.AbpZeroTemplateWebApiModule, YouChat.WebApi, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:37:59,745 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-14 14:37:59,789 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:37:59,789 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:37:59,789 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:37:59,789 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZeroTemplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-14 14:37:59,979 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-14 14:38:00,112 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-14 14:38:01,601 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-14 14:38:01,606 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-14 14:38:01,607 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-14 14:38:01,614 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-14 14:38:01,621 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZeroTemplate
+DEBUG 2016-06-14 14:38:01,629 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-14 14:38:01,639 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-14 14:38:01,641 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: qds122275536.my3w.com@qds122275536_db'.
+INFO  2016-06-14 14:38:01,641 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-14 14:38:01,641 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-14 14:38:01,641 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-14 14:38:01,641 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-14 14:38:01,642 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-14 14:38:01,642 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-14 14:38:01,642 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-14 14:38:01,652 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-14 14:38:01,789 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-14 14:38:01,795 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-14 14:38:01,795 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-14 14:38:01,797 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-14 14:38:01,799 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-14 14:38:01,800 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-14 14:38:01,803 [76836] Hangfire.Server.Worker                   - Background process 'Worker #05676836' started.
+DEBUG 2016-06-14 14:38:01,815 [a85fb] Hangfire.Server.Worker                   - Background process 'Worker #288a85fb' started.
+DEBUG 2016-06-14 14:38:01,817 [4504c] Hangfire.Server.Worker                   - Background process 'Worker #b8a4504c' started.
+DEBUG 2016-06-14 14:38:01,826 [8361c] Hangfire.Server.Worker                   - Background process 'Worker #36a8361c' started.
+DEBUG 2016-06-14 14:38:01,829 [b96ed] Hangfire.Server.Worker                   - Background process 'Worker #292b96ed' started.
+DEBUG 2016-06-14 14:38:01,836 [27498] Hangfire.Server.Worker                   - Background process 'Worker #08d27498' started.
+DEBUG 2016-06-14 14:38:01,841 [cbdf2] Hangfire.Server.Worker                   - Background process 'Worker #cbecbdf2' started.
+DEBUG 2016-06-14 14:38:01,842 [0ec07] Hangfire.Server.Worker                   - Background process 'Worker #faf0ec07' started.
+DEBUG 2016-06-14 14:38:01,856 [6da5c] Hangfire.Server.Worker                   - Background process 'Worker #d0f6da5c' started.
+DEBUG 2016-06-14 14:38:01,878 [95c3d] Hangfire.Server.Worker                   - Background process 'Worker #43c95c3d' started.
+DEBUG 2016-06-14 14:38:01,888 [2feef] Hangfire.Server.Worker                   - Background process 'Worker #d5e2feef' started.
+DEBUG 2016-06-14 14:38:01,900 [f302e] Hangfire.Server.Worker                   - Background process 'Worker #ad4f302e' started.
+DEBUG 2016-06-14 14:38:01,912 [a72a1] Hangfire.Server.Worker                   - Background process 'Worker #6c2a72a1' started.
+DEBUG 2016-06-14 14:38:01,922 [898b0] Hangfire.Server.Worker                   - Background process 'Worker #b64898b0' started.
+DEBUG 2016-06-14 14:38:01,936 [47917] Hangfire.Server.Worker                   - Background process 'Worker #5e447917' started.
+DEBUG 2016-06-14 14:38:01,943 [215ac] Hangfire.Server.Worker                   - Background process 'Worker #93b215ac' started.
+DEBUG 2016-06-14 14:38:01,948 [7aaa8] Hangfire.Server.Worker                   - Background process 'Worker #5b87aaa8' started.
+DEBUG 2016-06-14 14:38:01,953 [b30d2] Hangfire.Server.Worker                   - Background process 'Worker #837b30d2' started.
+DEBUG 2016-06-14 14:38:01,968 [d14d4] Hangfire.Server.Worker                   - Background process 'Worker #216d14d4' started.
+DEBUG 2016-06-14 14:38:01,974 [3579b] Hangfire.Server.Worker                   - Background process 'Worker #0b23579b' started.
+DEBUG 2016-06-14 14:38:01,979 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-14 14:38:01,983 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-14 14:38:02,096 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-14 14:38:02,261 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-14 14:38:02,314 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-14 14:38:02,365 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-14 14:38:02,409 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 31 classes defines auto mapping attributes
+DEBUG 2016-06-14 14:38:02,409 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.YouChat.Dto.ArticleListDto
+DEBUG 2016-06-14 14:38:02,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.YouChat.Dto.CreateOrUpdateArticleDto
+DEBUG 2016-06-14 14:38:02,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-14 14:38:02,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-14 14:38:02,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Organizations.Dto.OrganizationUnitDto
+DEBUG 2016-06-14 14:38:02,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Organizations.Dto.OrganizationUnitUserListDto
+DEBUG 2016-06-14 14:38:02,427 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Notifications.Dto.NotificationSubscriptionWithDisplayNameDto
+DEBUG 2016-06-14 14:38:02,427 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-14 14:38:02,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.MultiTenancy.Dto.TenantEditDto
+DEBUG 2016-06-14 14:38:02,431 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Localization.Dto.ApplicationLanguageEditDto
+DEBUG 2016-06-14 14:38:02,432 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Localization.Dto.ApplicationLanguageListDto
+DEBUG 2016-06-14 14:38:02,433 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.EditionEditDto
+DEBUG 2016-06-14 14:38:02,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.FlatFeatureDto
+DEBUG 2016-06-14 14:38:02,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.EditionListDto
+DEBUG 2016-06-14 14:38:02,436 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Profile.Dto.CurrentUserProfileEditDto
+DEBUG 2016-06-14 14:38:02,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2016-06-14 14:38:02,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserListDto
+DEBUG 2016-06-14 14:38:02,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Roles.Dto.RoleListDto
+DEBUG 2016-06-14 14:38:02,445 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2016-06-14 14:38:02,447 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Dto.FlatPermissionDto
+DEBUG 2016-06-14 14:38:02,447 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Auditing.Dto.AuditLogListDto
+DEBUG 2016-06-14 14:38:02,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2016-06-14 14:38:02,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Users.UserPermissionsEditViewModel
+DEBUG 2016-06-14 14:38:02,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Users.CreateOrEditUserModalViewModel
+DEBUG 2016-06-14 14:38:02,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Roles.CreateOrEditRoleModalViewModel
+DEBUG 2016-06-14 14:38:02,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Profile.MySettingsViewModel
+DEBUG 2016-06-14 14:38:02,456 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Editions.CreateOrEditEditionModalViewModel
+DEBUG 2016-06-14 14:38:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Tenants.TenantFeaturesEditViewModel
+DEBUG 2016-06-14 14:38:02,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.OrganizationUnits.EditOrganizationUnitModalViewModel
+DEBUG 2016-06-14 14:38:02,458 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Languages.CreateOrEditLanguageModalViewModel
+DEBUG 2016-06-14 14:38:02,458 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-14 14:38:02,466 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.YouChat.IArticleAppService' with service name 'app/article'.
+DEBUG 2016-06-14 14:38:02,467 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Tenants.Dashboard.ITenantDashboardAppService' with service name 'app/tenantDashboard'.
+DEBUG 2016-06-14 14:38:02,467 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-14 14:38:02,468 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Organizations.IOrganizationUnitAppService' with service name 'app/organizationUnit'.
+DEBUG 2016-06-14 14:38:02,470 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Notifications.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-06-14 14:38:02,471 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-14 14:38:02,472 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Logging.IWebLogAppService' with service name 'app/webLog'.
+DEBUG 2016-06-14 14:38:02,472 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Localization.ILanguageAppService' with service name 'app/language'.
+DEBUG 2016-06-14 14:38:02,473 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Editions.IEditionAppService' with service name 'app/edition'.
+DEBUG 2016-06-14 14:38:02,474 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Configuration.Tenants.ITenantSettingsAppService' with service name 'app/tenantSettings'.
+DEBUG 2016-06-14 14:38:02,475 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Configuration.Host.IHostSettingsAppService' with service name 'app/hostSettings'.
+DEBUG 2016-06-14 14:38:02,476 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Common.ICommonLookupAppService' with service name 'app/commonLookup'.
+DEBUG 2016-06-14 14:38:02,476 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Caching.ICachingAppService' with service name 'app/caching'.
+DEBUG 2016-06-14 14:38:02,477 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserLinkAppService' with service name 'app/userLink'.
+DEBUG 2016-06-14 14:38:02,478 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserLoginAppService' with service name 'app/userLogin'.
+DEBUG 2016-06-14 14:38:02,479 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-14 14:38:02,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.Profile.IProfileAppService' with service name 'app/profile'.
+DEBUG 2016-06-14 14:38:02,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-14 14:38:02,482 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Auditing.IAuditLogAppService' with service name 'app/auditLog'.
+WARN  2016-06-14 14:38:12,529 [5    ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:12,533 [5    ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:12,537 [5    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:12,551 [5    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:27,775 [39   ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:27,780 [39   ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:27,785 [39   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:27,798 [39   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:38:29,901 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b36a456d-48f9-4eeb-ac0a-9af638e02b4d","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-06-14T14:38:29.8978859+08:00","Properties":{}}
+DEBUG 2016-06-14 14:38:29,931 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b36a456d-48f9-4eeb-ac0a-9af638e02b4d
+WARN  2016-06-14 14:38:32,959 [42   ] Abp.Logging.LogHelper                    - Can not find 'SetAllAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,962 [42   ] Abp.Logging.LogHelper                    - Can not find 'SetAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,962 [42   ] Abp.Logging.LogHelper                    - Can not find 'ThereIsNoNotification' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,962 [42   ] Abp.Logging.LogHelper                    - Can not find 'SeeAllNotifications' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,963 [42   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,964 [42   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,964 [42   ] Abp.Logging.LogHelper                    - Can not find 'LinkedAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,964 [42   ] Abp.Logging.LogHelper                    - Can not find 'ManageAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:38:32,965 [42   ] Abp.Logging.LogHelper                    - Can not find 'LoginAttempts' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:39:29,905 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b36a456d-48f9-4eeb-ac0a-9af638e02b4d
+WARN  2016-06-14 14:39:30,795 [44   ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:30,805 [44   ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:30,809 [44   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:30,823 [44   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,269 [46   ] Abp.Logging.LogHelper                    - Can not find 'SetAllAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,270 [46   ] Abp.Logging.LogHelper                    - Can not find 'SetAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,270 [46   ] Abp.Logging.LogHelper                    - Can not find 'ThereIsNoNotification' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,270 [46   ] Abp.Logging.LogHelper                    - Can not find 'SeeAllNotifications' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,271 [46   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,271 [46   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,272 [46   ] Abp.Logging.LogHelper                    - Can not find 'LinkedAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,272 [46   ] Abp.Logging.LogHelper                    - Can not find 'ManageAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:39:31,272 [46   ] Abp.Logging.LogHelper                    - Can not find 'LoginAttempts' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:39:31,627 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d65e93cb-5934-4cfc-b9b0-404f04ec8015","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-06-14T14:39:31.6274167+08:00","Properties":{}}
+DEBUG 2016-06-14 14:39:31,653 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d65e93cb-5934-4cfc-b9b0-404f04ec8015
+DEBUG 2016-06-14 14:43:01,930 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-14 14:43:49,290 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d65e93cb-5934-4cfc-b9b0-404f04ec8015
+WARN  2016-06-14 14:43:50,111 [59   ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:50,115 [59   ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:50,120 [59   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:50,134 [59   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:43:50,992 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c9480537-fa91-4aeb-8fe0-73f8e6ca9fd3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-06-14T14:43:50.9922515+08:00","Properties":{}}
+DEBUG 2016-06-14 14:43:51,024 [60   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c9480537-fa91-4aeb-8fe0-73f8e6ca9fd3
+WARN  2016-06-14 14:43:52,162 [53   ] Abp.Logging.LogHelper                    - Can not find 'SetAllAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,163 [53   ] Abp.Logging.LogHelper                    - Can not find 'SetAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,163 [53   ] Abp.Logging.LogHelper                    - Can not find 'ThereIsNoNotification' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,163 [53   ] Abp.Logging.LogHelper                    - Can not find 'SeeAllNotifications' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,163 [53   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,164 [53   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,164 [53   ] Abp.Logging.LogHelper                    - Can not find 'LinkedAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,164 [53   ] Abp.Logging.LogHelper                    - Can not find 'ManageAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:43:52,165 [53   ] Abp.Logging.LogHelper                    - Can not find 'LoginAttempts' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:44:03,936 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c9480537-fa91-4aeb-8fe0-73f8e6ca9fd3
+DEBUG 2016-06-14 14:48:01,955 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-14 14:53:01,985 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-14 14:59:22,355 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-14 14:59:23,300 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-14 14:59:23,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,305 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,305 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,305 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,305 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Runtime.Caching.Redis.AbpRedisCacheModule, Abp.RedisCache, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.OData.AbpWebApiODataModule, Abp.Web.Api.OData, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.Ldap.AbpZeroLdapModule, Abp.Zero.Ldap, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateApplicationModule, YouChat.Application, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateCoreModule, YouChat.Core, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.AbpZeroTemplateDataModule, YouChat.EntityFramework, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.Web.AbpZeroTemplateWebModule, YouChat.Web, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YouChat.WebApi.AbpZeroTemplateWebApiModule, YouChat.WebApi, Version=1.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-14 14:59:23,311 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-14 14:59:23,354 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:59:23,354 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:59:23,354 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-14 14:59:23,354 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZeroTemplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-14 14:59:23,581 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-14 14:59:23,767 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-14 14:59:25,062 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-14 14:59:25,067 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-14 14:59:25,068 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-14 14:59:25,076 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-14 14:59:25,083 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZeroTemplate
+DEBUG 2016-06-14 14:59:25,091 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-14 14:59:25,101 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: qds122275536.my3w.com@qds122275536_db'.
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-14 14:59:25,104 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-14 14:59:25,105 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-14 14:59:25,105 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-14 14:59:25,115 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-14 14:59:25,266 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-14 14:59:25,274 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-14 14:59:25,275 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-14 14:59:25,276 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-14 14:59:25,284 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-14 14:59:25,285 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-14 14:59:25,288 [c7584] Hangfire.Server.Worker                   - Background process 'Worker #b27c7584' started.
+DEBUG 2016-06-14 14:59:25,291 [d8ccc] Hangfire.Server.Worker                   - Background process 'Worker #016d8ccc' started.
+DEBUG 2016-06-14 14:59:25,294 [3d1a2] Hangfire.Server.Worker                   - Background process 'Worker #b923d1a2' started.
+DEBUG 2016-06-14 14:59:25,297 [0d5c9] Hangfire.Server.Worker                   - Background process 'Worker #6970d5c9' started.
+DEBUG 2016-06-14 14:59:25,301 [5fd83] Hangfire.Server.Worker                   - Background process 'Worker #ef25fd83' started.
+DEBUG 2016-06-14 14:59:25,304 [b0903] Hangfire.Server.Worker                   - Background process 'Worker #183b0903' started.
+DEBUG 2016-06-14 14:59:25,308 [c68d6] Hangfire.Server.Worker                   - Background process 'Worker #f92c68d6' started.
+DEBUG 2016-06-14 14:59:25,315 [4ce1f] Hangfire.Server.Worker                   - Background process 'Worker #da84ce1f' started.
+DEBUG 2016-06-14 14:59:25,326 [19e63] Hangfire.Server.Worker                   - Background process 'Worker #4ef19e63' started.
+DEBUG 2016-06-14 14:59:25,332 [061fd] Hangfire.Server.Worker                   - Background process 'Worker #717061fd' started.
+DEBUG 2016-06-14 14:59:25,338 [1e797] Hangfire.Server.Worker                   - Background process 'Worker #4d71e797' started.
+DEBUG 2016-06-14 14:59:25,345 [7a9af] Hangfire.Server.Worker                   - Background process 'Worker #d497a9af' started.
+DEBUG 2016-06-14 14:59:25,354 [51601] Hangfire.Server.Worker                   - Background process 'Worker #0d751601' started.
+DEBUG 2016-06-14 14:59:25,359 [f912d] Hangfire.Server.Worker                   - Background process 'Worker #032f912d' started.
+DEBUG 2016-06-14 14:59:25,369 [a1b3a] Hangfire.Server.Worker                   - Background process 'Worker #612a1b3a' started.
+DEBUG 2016-06-14 14:59:25,377 [d1d48] Hangfire.Server.Worker                   - Background process 'Worker #f31d1d48' started.
+DEBUG 2016-06-14 14:59:25,383 [af97e] Hangfire.Server.Worker                   - Background process 'Worker #622af97e' started.
+DEBUG 2016-06-14 14:59:25,389 [48192] Hangfire.Server.Worker                   - Background process 'Worker #14348192' started.
+DEBUG 2016-06-14 14:59:25,391 [e3657] Hangfire.Server.Worker                   - Background process 'Worker #37ce3657' started.
+DEBUG 2016-06-14 14:59:25,394 [15964] Hangfire.Server.Worker                   - Background process 'Worker #34615964' started.
+DEBUG 2016-06-14 14:59:25,397 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-14 14:59:25,411 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-14 14:59:25,583 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-14 14:59:25,699 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-14 14:59:25,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 31 classes defines auto mapping attributes
+DEBUG 2016-06-14 14:59:25,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.YouChat.Dto.ArticleListDto
+DEBUG 2016-06-14 14:59:25,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.YouChat.Dto.CreateOrUpdateArticleDto
+DEBUG 2016-06-14 14:59:25,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-14 14:59:25,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-14 14:59:25,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Organizations.Dto.OrganizationUnitDto
+DEBUG 2016-06-14 14:59:25,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Organizations.Dto.OrganizationUnitUserListDto
+DEBUG 2016-06-14 14:59:25,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Notifications.Dto.NotificationSubscriptionWithDisplayNameDto
+DEBUG 2016-06-14 14:59:25,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-14 14:59:25,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.MultiTenancy.Dto.TenantEditDto
+DEBUG 2016-06-14 14:59:25,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Localization.Dto.ApplicationLanguageEditDto
+DEBUG 2016-06-14 14:59:25,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Localization.Dto.ApplicationLanguageListDto
+DEBUG 2016-06-14 14:59:25,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.EditionEditDto
+DEBUG 2016-06-14 14:59:25,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.FlatFeatureDto
+DEBUG 2016-06-14 14:59:25,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Editions.Dto.EditionListDto
+DEBUG 2016-06-14 14:59:25,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Profile.Dto.CurrentUserProfileEditDto
+DEBUG 2016-06-14 14:59:25,768 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2016-06-14 14:59:25,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserListDto
+DEBUG 2016-06-14 14:59:25,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Roles.Dto.RoleListDto
+DEBUG 2016-06-14 14:59:25,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2016-06-14 14:59:25,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Dto.FlatPermissionDto
+DEBUG 2016-06-14 14:59:25,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Auditing.Dto.AuditLogListDto
+DEBUG 2016-06-14 14:59:25,777 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2016-06-14 14:59:25,779 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Users.UserPermissionsEditViewModel
+DEBUG 2016-06-14 14:59:25,780 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Users.CreateOrEditUserModalViewModel
+DEBUG 2016-06-14 14:59:25,780 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Roles.CreateOrEditRoleModalViewModel
+DEBUG 2016-06-14 14:59:25,781 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Profile.MySettingsViewModel
+DEBUG 2016-06-14 14:59:25,785 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Editions.CreateOrEditEditionModalViewModel
+DEBUG 2016-06-14 14:59:25,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Tenants.TenantFeaturesEditViewModel
+DEBUG 2016-06-14 14:59:25,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.OrganizationUnits.EditOrganizationUnitModalViewModel
+DEBUG 2016-06-14 14:59:25,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Areas.Mpa.Models.Languages.CreateOrEditLanguageModalViewModel
+DEBUG 2016-06-14 14:59:25,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YouChat.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-14 14:59:25,795 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.YouChat.IArticleAppService' with service name 'app/article'.
+DEBUG 2016-06-14 14:59:25,795 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Tenants.Dashboard.ITenantDashboardAppService' with service name 'app/tenantDashboard'.
+DEBUG 2016-06-14 14:59:25,796 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-14 14:59:25,797 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Organizations.IOrganizationUnitAppService' with service name 'app/organizationUnit'.
+DEBUG 2016-06-14 14:59:25,798 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Notifications.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-06-14 14:59:25,799 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-14 14:59:25,800 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Logging.IWebLogAppService' with service name 'app/webLog'.
+DEBUG 2016-06-14 14:59:25,800 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Localization.ILanguageAppService' with service name 'app/language'.
+DEBUG 2016-06-14 14:59:25,801 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Editions.IEditionAppService' with service name 'app/edition'.
+DEBUG 2016-06-14 14:59:25,802 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Configuration.Tenants.ITenantSettingsAppService' with service name 'app/tenantSettings'.
+DEBUG 2016-06-14 14:59:25,803 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Configuration.Host.IHostSettingsAppService' with service name 'app/hostSettings'.
+DEBUG 2016-06-14 14:59:25,804 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Common.ICommonLookupAppService' with service name 'app/commonLookup'.
+DEBUG 2016-06-14 14:59:25,805 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Caching.ICachingAppService' with service name 'app/caching'.
+DEBUG 2016-06-14 14:59:25,805 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserLinkAppService' with service name 'app/userLink'.
+DEBUG 2016-06-14 14:59:25,806 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserLoginAppService' with service name 'app/userLogin'.
+DEBUG 2016-06-14 14:59:25,807 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-14 14:59:25,808 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Users.Profile.IProfileAppService' with service name 'app/profile'.
+DEBUG 2016-06-14 14:59:25,809 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-14 14:59:25,809 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YouChat.Auditing.IAuditLogAppService' with service name 'app/auditLog'.
+DEBUG 2016-06-14 14:59:25,822 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-14 14:59:25,903 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+WARN  2016-06-14 14:59:37,039 [9    ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:37,044 [9    ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:37,048 [9    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:37,062 [9    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:48,676 [5    ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:48,680 [5    ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:48,685 [5    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:48,699 [5    ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,270 [39   ] Abp.Logging.LogHelper                    - Can not find 'SetAllAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,271 [39   ] Abp.Logging.LogHelper                    - Can not find 'SetAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,271 [39   ] Abp.Logging.LogHelper                    - Can not find 'ThereIsNoNotification' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,271 [39   ] Abp.Logging.LogHelper                    - Can not find 'SeeAllNotifications' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,272 [39   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,272 [39   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,272 [39   ] Abp.Logging.LogHelper                    - Can not find 'LinkedAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,272 [39   ] Abp.Logging.LogHelper                    - Can not find 'ManageAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 14:59:49,273 [39   ] Abp.Logging.LogHelper                    - Can not find 'LoginAttempts' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 14:59:50,486 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6cbe6ffe-1ee3-4d72-be19-5f829635c3e2","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-06-14T14:59:50.4821312+08:00","Properties":{}}
+DEBUG 2016-06-14 14:59:50,523 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6cbe6ffe-1ee3-4d72-be19-5f829635c3e2
+DEBUG 2016-06-14 15:01:30,527 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6cbe6ffe-1ee3-4d72-be19-5f829635c3e2
+WARN  2016-06-14 15:01:31,213 [52   ] Abp.Logging.LogHelper                    - Can not find '理聊' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,217 [52   ] Abp.Logging.LogHelper                    - Can not find '文章' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,222 [52   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,237 [52   ] Abp.Logging.LogHelper                    - Can not find 'OrganizationUnits' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,889 [45   ] Abp.Logging.LogHelper                    - Can not find 'SetAllAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,889 [45   ] Abp.Logging.LogHelper                    - Can not find 'SetAsRead' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,889 [45   ] Abp.Logging.LogHelper                    - Can not find 'ThereIsNoNotification' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,890 [45   ] Abp.Logging.LogHelper                    - Can not find 'SeeAllNotifications' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,890 [45   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,890 [45   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,891 [45   ] Abp.Logging.LogHelper                    - Can not find 'LinkedAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,891 [45   ] Abp.Logging.LogHelper                    - Can not find 'ManageAccounts' in localization source 'AbpZeroTemplate'!
+WARN  2016-06-14 15:01:31,892 [45   ] Abp.Logging.LogHelper                    - Can not find 'LoginAttempts' in localization source 'AbpZeroTemplate'!
+DEBUG 2016-06-14 15:01:32,465 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"18e224d6-8e6d-4383-9c36-f8a24b237fdb","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-06-14T15:01:32.4659643+08:00","Properties":{}}
+DEBUG 2016-06-14 15:01:32,519 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 18e224d6-8e6d-4383-9c36-f8a24b237fdb
+DEBUG 2016-06-14 15:02:05,950 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 18e224d6-8e6d-4383-9c36-f8a24b237fdb

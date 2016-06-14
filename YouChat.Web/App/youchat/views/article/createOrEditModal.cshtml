@@ -22,9 +22,8 @@
             <div class="form-group form-md-line-input form-md-floating-label no-hint">
                 @*<textarea class="form-control"  ng-class="{'edited':vm.article.content}" ng-model="vm.article.content"></textarea>
                 <label>内容</label>*@
-                <ueditor  ng-model="vm.article.content">
-
-                </ueditor>
+                @*<ueditor ng-model="vm.article.content"></ueditor>*@
+                <div class="ueditor" ng-model="vm.article.content"></div>
             </div>
          </div>
         <div class="modal-footer">

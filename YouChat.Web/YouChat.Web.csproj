@@ -324,7 +324,7 @@
     <Content Include="Abp\Framework\styles\abp.mixings.css" />
     <Content Include="Abp\Framework\styles\abp.mixings.min.css" />
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
-    <Content Include="App\common\directives\baiduueditor.js" />
+    <Content Include="App\common\directives\angular-ueditor.js" />
     <Content Include="App\common\directives\enterKey.js" />
     <Content Include="App\common\services\appUserNotificationHelper.js" />
     <Content Include="App\common\views\auditLogs\detailModal.css">
