@@ -28,6 +28,7 @@ namespace YouChat.Web.Controllers
         public ActionResult Index()
         {
             var articleList = _articelService.GetArticlAll();
+            Logger.Warn("--------------------------------GetArticle---------------------------------------------");
             return View(articleList);
         }
 
