@@ -43,9 +43,9 @@ namespace YouChat.YouChat
 
         public async Task<PagedResultOutput<ArticleListDto>> GetArticleList(GetArticleInput input)
         {
-            var query = _articleRepository.GetAll().Include(x=>x.Category).Include(x=>x.CreatorUser)
-                       .WhereIf(!input.Filter.IsNullOrEmpty(),x=>x.Title.Contains(input.Filter))
-                       .WhereIf(AbpSession.UserId!=2,x=>x.CreatorUser.Id==AbpSession.UserId); //这里要改
+            var query = _articleRepository.GetAll().Include(x => x.Category).Include(x => x.CreatorUser)
+                .WhereIf(!input.Filter.IsNullOrEmpty(), x => x.Title.Contains(input.Filter));
+                      // .WhereIf(AbpSession.UserId!=2,x=>x.CreatorUser.Id==AbpSession.UserId); //这里要改
            
             var count = await query.CountAsync();
 
@@ -68,7 +68,7 @@ namespace YouChat.YouChat
 
         public async Task<CreateOrUpdateArticleDto> GetArticle(NullableIdInput input)
         {
-            if (input.Id.HasValue)
+            if (input.Id.HasValue)  
             {
                 var article = await _articleRepository.FirstOrDefaultAsync(x => x.Id == input.Id);
                 var articleOutput = article.MapTo<CreateOrUpdateArticleDto>();

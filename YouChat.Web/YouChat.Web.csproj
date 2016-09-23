@@ -769,9 +769,6 @@
     <Content Include="Content\youchat\kindeditor\lang\zh-cn\images\music.png" />
     <Content Include="Content\youchat\kindeditor\lang\zh-cn\images\upload.png" />
     <Content Include="Content\youchat\kindeditor\lang\zh-cn\zh-cn.js" />
-    <Content Include="Content\youchat\kindeditor\net\Bin\Newtonsoft.Json.dll" />
-    <Content Include="Content\youchat\kindeditor\net\Bin\Newtonsoft.Json.pdb" />
-    <Content Include="Content\youchat\kindeditor\net\Bin\Newtonsoft.Json.xml" />
     <Content Include="Content\youchat\kindeditor\net\net.sln" />
     <Content Include="Content\youchat\kindeditor\themes\default\css\ueditor.css" />
     <Content Include="Content\youchat\kindeditor\themes\default\css\ueditor.min.css" />
@@ -2262,7 +2259,6 @@
     <Content Include="Content\youchat\kindeditor\third-party\video-js\font\vjs.eot" />
     <Content Include="Content\youchat\kindeditor\third-party\video-js\font\vjs.ttf" />
     <Content Include="Content\youchat\kindeditor\third-party\video-js\font\vjs.woff" />
-    <Content Include="Content\youchat\kindeditor\net\.vs\net\v14\.suo" />
     <Content Include="Content\youchat\kindeditor\net\config.json" />
     <Content Include="Content\youchat\kindeditor\net\controller.ashx" />
     <Content Include="Content\youchat\kindeditor\net\README.md" />
@@ -3358,6 +3354,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\youchat\kindeditor\net\.vs\net\v14\" />
+    <Folder Include="Content\youchat\kindeditor\net\Bin\" />
     <Folder Include="Content\youchat\kindeditor\net\upload\image\20160614\" />
   </ItemGroup>
   <PropertyGroup>
